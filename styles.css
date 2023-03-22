@@ -1,0 +1,209 @@
+.container-fluid {
+    max-width: 1300px;
+}
+
+/* nav {
+    height: auto;
+    max-height: 200px;
+} */
+
+.container {
+    max-width: 1000px;
+}
+
+p {
+    line-height: 210%;
+    color: #7D7D7D !important;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar-brand {
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0px !important;
+    padding: 0rem !important;
+}
+
+.nav-item a {
+    color: #444444 !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.linkedinIcon {
+    margin-right: 1.5rem;
+}
+
+#titleImage {
+    max-height: 500px;
+    width: auto;
+}
+
+#titleSection {
+    margin-top: 11rem;
+}
+
+#toolsSection {
+    margin-top: 10rem;
+}
+
+#omMigSection {
+    margin-top: 10rem;
+}
+
+#projectsSection {
+    margin-top: 10rem;
+}
+
+.textbox {
+    text-align: center;
+    margin-right: 1.5rem;
+    padding: 0.3rem 1.5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 31px;
+    transition: all .2s ease-in-out;
+    color: black !important;
+}
+
+.textbox:hover {
+    transform: scale(1.1);
+}
+
+#header {
+    font-size: 4rem;
+    font-weight: 800;
+    box-shadow: 0px 14px 19px rgba(0, 0, 0, 0.04);
+}
+
+#headerTitle {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+
+.toolimage:hover {
+    transform: scale(1.1);
+}
+
+.projecticons {
+    height: 32px;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.your_frame {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+.your_frame img {
+    object-fit: cover;
+    width: 100%;
+    transform: translateY(0);
+    transition: 5s ease-out;
+}
+
+.your_frame:hover img {
+    object-fit: cover;
+    transform: translateY(calc(-100% + 400px));
+    transition: 5s ease-out;
+}
+
+.mobile_frame {
+    width: 80px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+.mobile_frame img {
+    object-fit: cover;
+    width: 100%;
+    transform: translateY(0);
+    transition: 5s ease-out;
+}
+
+.mobile_frame:hover img {
+    object-fit: cover;
+    transform: translateY(calc(-100% + 400px));
+    transition: 5s ease-out;
+}
+
+.forminput {
+    background-color: #F2F2F2;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.formbtn {
+    padding: 1rem;
+}
+
+.img-fluid {
+    object-fit: cover;
+}
+
+footer {
+    box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.04);
+}
+
+
+@media (max-width: 992px) {
+
+
+
+    #toolsLine {
+        visibility: collapse;
+    }
+
+    #titleSection {
+        margin-top: 8rem;
+    }
+
+    #toolsSection {
+        margin-top: 6rem;
+    }
+
+    #omMigSection {
+        margin-top: 6rem;
+    }
+
+    #projectsSection {
+        margin-top: 6rem;
+    }
+
+    #titleImage {
+        max-height: 328px;
+        width: auto;
+        border-radius: 0px;
+    }
+
+    .textbox {
+        text-align: center;
+        width: 100%;
+        margin: 0px 0px 20px;
+        padding: 0.5rem 1.5rem;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 31px;
+    }
+}
