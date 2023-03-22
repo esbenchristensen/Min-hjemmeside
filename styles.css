@@ -102,7 +102,7 @@ h5 {
 }
 
 .your_frame {
-    width: 100%;
+    width: auto;
     height: 300px;
     overflow: hidden;
     cursor: pointer;
@@ -125,7 +125,8 @@ h5 {
 }
 
 .mobile_frame {
-    width: 80px;
+    min-width: 50px;
+    width: 50px;
     height: 300px;
     overflow: hidden;
     cursor: pointer;
