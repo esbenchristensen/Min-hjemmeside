@@ -22,8 +22,8 @@
     </head>
 
     <body>
-        <header>
-            <nav id="header" class="navbar navbar-expand-lg bg-white fixed-top" aria-label="navbar">
+        <header class="mt-3">
+            <nav id="header" class="navbar navbar-expand-lg bg-white" aria-label="navbar">
                 <div class="container-fluid">
                     <!-- <a id="brandMobile" class="navbar-brand col-lg-3 visually-hidden" href="#">EC</a> -->
                     <a class="navbar-brand col-lg-auto" href="#"><h1 class="navbar-brand">EC</h1></a>
@@ -35,13 +35,13 @@
                         <div class="col-lg-auto"></div>
                         <ul class="navbar-nav col-lg-auto justify-content-lg-center">
                             <li class="nav-item mx-lg-5 mt-3 mt-lg-0">
-                                <a class="nav-link active" aria-current="page" href="#">Om mig</a>
+                                <a class="nav-link active" aria-current="page" href="#omMigSection">Om mig</a>
                             </li>
                             <li class="nav-item mx-lg-5 mt-3 mt-lg-0">
-                                <a class="nav-link active" aria-current="page" href="#">Projekter</a>
+                                <a class="nav-link active" aria-current="page" href="#projectsSection">Projekter</a>
                             </li>
                             <li class="nav-item mx-lg-5 mt-3 mt-lg-0">
-                                <a class="nav-link active" aria-current="page" href="#">Kontakt</a>
+                                <a class="nav-link active" aria-current="page" href="#contactSection">Kontakt</a>
                             </li>
                         </ul>
                         <div class="d-lg-flex col-lg-auto justify-content-lg-end mt-4 mt-lg-0">
@@ -94,12 +94,9 @@
                 </div>
             </section>
 
-            <section id="toolsSection">
-                <div class="container">
-                    <div class="row">
-                        <div class="col text-center text-lg-start"><h5>VÆRKTØJER</h5></div>
-                    </div>
-                    <div class="row justify-content-center justify-content-lg-start mt-2 pt-2 g-5">
+            <div class="container">
+                <div class="toolscontainer">
+                    <div class="row justify-content-center justify-content-lg-between g-5">
                         <div class="col-auto">
                             <img class="toolimage" src="images/javascript 1.png" alt="" />
                         </div>
@@ -135,72 +132,88 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <section id="omMigSection">
                 <div class="container">
+                    <hr class="featurette-divider" />
                     <div class="row">
-                        <div class="col text-center text-lg-start"><h5>OM MIG</h5></div>
+                        <div class="col text-center text-lg-start"><h4 class="fw-bolder">Om mig</h4></div>
                     </div>
-                    <div class="row mt-2 pt-2 g-5">
+
+                    <div class="row g-5 mt-2">
                         <div class="col-12 col-lg-6 text-center">
                             <img class="img-fluid" src="images/mig3.webp" alt="" />
                         </div>
-                        <div class="col-12 col-lg-6 text-center text-lg-start mt-lg-5">
+                        <div class="col-12 col-lg-6 text-center text-lg-start mt-lg-5 pt-3">
                             <h5>Flittig, kreativ, resultatorienteret</h5>
                             <p class="mt-4 text-center text-lg-start">
                                 Flittig, kreativ, resultatorienteret udvikler med interesse i kommercielle produkter og med flair for front-end, back-end samt design. I min fritid er jeg fysisk aktiv
                                 og dyrker friluftslivet. Flittig, kreativ, resultatorienteret udvikler med interesse i kommercielle produkter.
                             </p>
+                            <div class="row gx-3 g-lg-0 text-nowrap justify-content-center justify-content-lg-start mt-4">
+                                <div class="col-6 col-sm-auto"><p class="textbox trait">Friluftsliv 🏕️</p></div>
+                                <div class="col-6 col-sm-auto"><p class="textbox trait">Træning 🏋🏼</p></div>
+                                <div class="col-6 col-sm-auto"><p class="textbox trait">Hundetræning 🦮</p></div>
+                                <div class="col-6 col-sm-auto"><p class="textbox trait">Cykling 🚴🏼‍♂️</p></div>
+                                <div class="col-6 col-sm-auto"><p class="textbox trait">Netflix 🎬</p></div>
+                                <div class="col-6 col-sm-auto"><p class="textbox trait">Læring 🧠</p></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row gx-3 g-lg-0 text-nowrap justify-content-center justify-content-lg-start mt-4">
-                        <div class="col-6 col-sm-auto"><p class="textbox trait">Friluftsliv 🏕️</p></div>
-                        <div class="col-6 col-sm-auto"><p class="textbox trait">Træning 🏋🏼</p></div>
-                        <div class="col-6 col-sm-auto"><p class="textbox trait">Hundetræning 🦮</p></div>
-                        <div class="col-6 col-sm-auto"><p class="textbox trait">Cykling 🚴🏼‍♂️</p></div>
-                        <div class="col-6 col-sm-auto"><p class="textbox trait">Netflix 🎬</p></div>
-                        <div class="col-6 col-sm-auto"><p class="textbox trait m-0">Læring 🧠</p></div>
                     </div>
                 </div>
             </section>
 
             <section id="projectsSection">
                 <div class="container">
+                    <hr class="featurette-divider" />
                     <div class="row">
-                        <div class="col text-center text-lg-start"><h5>PROJEKTER</h5></div>
+                        <div class="col text-center text-lg-start"><h4 class="fw-bolder">Projekter</h4></div>
                     </div>
-                    <div class="row justify-content-center justify-content-lg-start g-5 mt-2 pt-2 mb-2 pb-2 mt-lg-2 pt-lg-2 mb-lg-5 pb-lg-5">
+
+                    <div class="row justify-content-center justify-content-lg-start flex-column-reverse flex-lg-row g-5 mt-2">
+                        <div class="col-12 col-lg-6 pt-3">
+                            <div class="col-lg-12 text-center text-lg-start"><h5>Landingpage for virksomhed</h5></div>
+                            <div class="col-12 text-center text-lg-start">
+                                <p>
+                                    Flittig, kreativ, resultatorienteret udvikler med interesse i kommercielle produkter og med flair for front-end, back-end samt design. med interesse i kommercielle
+                                </p>
+                            </div>
+                            <div class="col-12 mt-4 text-center text-lg-start">
+                                <img class="projecticons" src="images/javascript 1.png" alt="" />
+                                <img class="projecticons" src="images/html5 1.png" alt="" />
+                                <img class="projecticons" src="images/css 1.png" alt="" />
+                                <img class="projecticons" src="images/bootstrap 1.png" alt="" />
+                            </div>
+                            <div class="col-12 mt-5 text-center text-lg-start">
+                                <a target="_blank" href="https://esbenvh.github.io/Bootstrap-Landingpage/"
+                                    ><button class="btn btn-outline-dark rounded-3 px-3 py-2"><i class="bi bi-display"></i> Live demo</button></a
+                                >
+                                <a target="_blank" href="https://github.com/esbenvh/Bootstrap-Landingpage"
+                                    ><button class="btn btn-outline-dark mx-3 rounded-3 px-3 py-2"><i class="bi bi-github"></i> Se koden</button></a
+                                >
+                            </div>
+                        </div>
                         <div class="col-12 col-lg-6 d-flex">
                             <div class="your_frame">
                                 <img class="img-fluid" src="images/landingpage.webp" alt="" />
                             </div>
-                            <div class="mobile_frame mx-3">
-                                <img class="img-fluid" src="images/landingpagemobile.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="col-lg-12 text-center text-lg-start"><h5>Landingpage for virksomhed</h5></div>
-                            <div class="col-12 text-center text-lg-start">
-                                <p>
-                                    Flittig, kreativ, resultatorienteret udvikler med interesse i kommercielle produkter og med flair for front-end, back-end samt design. med interesse i kommercielle
-                                </p>
-                            </div>
-                            <div class="col-12 mt-4 text-center text-lg-start">
-                                <img class="projecticons" src="images/javascript 1.png" alt="" />
-                                <img class="projecticons" src="images/html5 1.png" alt="" />
-                                <img class="projecticons" src="images/css 1.png" alt="" />
-                                <img class="projecticons" src="images/bootstrap 1.png" alt="" />
-                            </div>
-                            <div class="col-12 mt-5 text-center text-lg-start">
-                                <button class="btn btn-dark"><i class="bi bi-display"></i> Live demo</button>
-                                <button class="btn btn-outline-dark mx-3"><i class="bi bi-github"></i> Se koden</button>
+                            <div class="mobile_frame">
+                                <img class="img-fluid" src="images/landingpagemobile.webp" alt="" />
                             </div>
                         </div>
                     </div>
 
-                    <div class="row justify-content-center flex-column-reverse flex-lg-row justify-content-lg-start g-5 mt-4 pt-4 mb-2 pb-2 mt-lg-5 pt-lg-5 mb-lg-5 pb-lg-5">
-                        <div class="col-12 col-lg-6">
+                    <!--                     <div class="row justify-content-center justify-content-lg-start g-5 mt-5 pt-5">
+                        <div class="col-12 col-lg-6 d-flex">
+                            <div class="your_frame">
+                                <img class="img-fluid" src="images/landingpage.webp" alt="" />
+                            </div>
+                            <div class="mobile_frame">
+                                <img class="img-fluid" src="images/landingpagemobile.webp" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 pt-3">
                             <div class="col-lg-12 text-center text-lg-start"><h5>Landingpage for virksomhed</h5></div>
                             <div class="col-12 text-center text-lg-start">
                                 <p>
@@ -214,24 +227,14 @@
                                 <img class="projecticons" src="images/bootstrap 1.png" alt="" />
                             </div>
                             <div class="col-12 mt-5 text-center text-lg-start">
-                                <button class="btn btn-dark"><i class="bi bi-display"></i> Live demo</button>
-                                <button class="btn btn-outline-dark mx-3"><i class="bi bi-github"></i> Se koden</button>
+                                <button class="btn btn-outline-dark rounded-3 px-3 py-2"><i class="bi bi-display"></i> Live demo</button>
+                                <button class="btn btn-outline-dark mx-3 rounded-3 px-3 py-2"><i class="bi bi-github"></i> Se koden</button>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="your_frame">
-                                <img class="img-fluid" src="images/landingpage.webp" alt="" />
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
 
-                    <div class="row justify-content-center justify-content-lg-start g-5 mt-4 pt-4 mb-5 pb-5 mt-lg-5 pt-lg-5 mb-lg-5 pb-lg-5">
-                        <div class="col-12 col-lg-6">
-                            <div class="your_frame">
-                                <img class="img-fluid" src="images/landingpage.webp" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
+                    <!--                     <div class="row justify-content-center justify-content-lg-start flex-column-reverse flex-lg-row g-5 mt-5 pt-5">
+                        <div class="col-12 col-lg-6 pt-3">
                             <div class="col-lg-12 text-center text-lg-start"><h5>Landingpage for virksomhed</h5></div>
                             <div class="col-12 text-center text-lg-start">
                                 <p>
@@ -245,15 +248,23 @@
                                 <img class="projecticons" src="images/bootstrap 1.png" alt="" />
                             </div>
                             <div class="col-12 mt-5 text-center text-lg-start">
-                                <button class="btn btn-dark"><i class="bi bi-display"></i> Live demo</button>
-                                <button class="btn btn-outline-dark mx-3"><i class="bi bi-github"></i> Se koden</button>
+                                <button class="btn btn-outline-dark rounded-3 px-3 py-2"><i class="bi bi-display"></i> Live demo</button>
+                                <button class="btn btn-outline-dark mx-3 rounded-3 px-3 py-2"><i class="bi bi-github"></i> Se koden</button>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-12 col-lg-6 d-flex">
+                            <div class="your_frame">
+                                <img class="img-fluid" src="images/landingpage.webp" alt="" />
+                            </div>
+                            <div class="mobile_frame">
+                                <img class="img-fluid" src="images/landingpagemobile.webp" alt="" />
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </section>
         </main>
-        <footer class="bg-white">
+        <footer id="contactSection" class="bg-white">
             <div class="container-fluid">
                 <div class="row justify-content-center pt-5 pb-5">
                     <div class="col-12 col-lg-6 mb-3 mb-lg-0">
@@ -291,30 +302,33 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mt-4 text-center text-lg-start">
-                        <form action="" class="form-inline">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="form-inline">
                             <div class="row g-2 mb-3">
                                 <div class="col-6">
-                                    <input class="form-control forminput" type="text" placeholder="Navn*" />
+                                    <input class="form-control forminput" type="text" name="name" required placeholder="Navn*" />
                                 </div>
 
                                 <div class="col-6">
-                                    <input class="form-control forminput" type="text" placeholder="Email*" />
+                                    <input class="form-control forminput" type="email" name="email" required placeholder="Email*" />
                                 </div>
                             </div>
 
                             <div class="col-12 mb-3">
-                                <textarea class="w-100 form-control forminput" name="" id="" cols="30" rows="8" placeholder="Besked*"></textarea>
+                                <textarea class="w-100 form-control forminput" required name="message" id="" cols="30" rows="8" placeholder="Besked*"></textarea>
                             </div>
-
+                            <input type="hidden" name="redirect" value="http://127.0.0.1:5500/succes.html" />
+                            <input type="hidden" name="access_key" value="bc0fa6e1-4bc7-4677-a547-de0a543adc69" />
                             <div class="col-12">
-                                <button class="btn btn-dark w-100 formbtn">Send</button>
+                                <button class="btn btn-dark w-100 formbtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Send</button>
                             </div>
                         </form>
+                        <p id="result"></p>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
+        <script src="contactform.js"></script>
         <script src="app.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
