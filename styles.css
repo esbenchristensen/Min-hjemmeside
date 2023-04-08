@@ -213,6 +213,24 @@ footer {
 
 @media (max-width: 992px) {
 
+    .nav-item a {
+    color: #444444 !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all .2s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: #444444 !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    transform: scale(1.0);
+}
+
 
 
     #toolsLine {
